@@ -24,7 +24,7 @@ public class GameMenu {
         Thread.sleep(sleepTime);
         clearConsole();
         while (true) {
-            clearConsole();
+           try{ clearConsole();
             System.out.println("How many rounds would you like to play?");
             int numberOfRounds = Integer.valueOf(inputScanner.nextLine());
             if (numberOfRounds == 0) {
@@ -80,6 +80,8 @@ public class GameMenu {
                 System.out.println("Thank you for playing");
             }
             break;
-        }
+        }catch (Exception numException){
+               System.out.println("Number must be between one and ten!");
+           }
     }
 }
