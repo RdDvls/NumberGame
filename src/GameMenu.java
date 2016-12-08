@@ -13,15 +13,15 @@ public class GameMenu {
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
 
-    public static void gameMenu() throws Exception {
+    public static void gameMenu()throws Exception {
         int sleepTime = 2000;
         HigherNumberGame higherNumberGame = new HigherNumberGame();
         Scanner inputScanner = new Scanner(System.in);
         System.out.println("************");
         System.out.println("Guess the Number Game");
         System.out.println("************");
-        Thread.sleep(sleepTime);
-        clearConsole();
+//        Thread.sleep(sleepTime);
+//        clearConsole();
         higherNumberGame.guessHigherNumberGame(inputScanner,sleepTime);
     }
 }
